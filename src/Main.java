@@ -1,14 +1,26 @@
-
+import java.util.Scanner;
 public class Main {
 
     public static void main(String args[]) {
-        String question = "";
-        String choiceOne = "";
-        String choiceTwo = "";
-        String choiceThree = "";
+        String question = "What is 1+1";
+        String choiceOne = "0";
+        String choiceTwo = "2";
+        String choiceThree = "1";
 
         String correctAnswer = choiceTwo;
 
+        System.out.println(question);
+        System.out.println(choiceOne);
+        System.out.println(choiceTwo);
+        System.out.println(choiceThree);
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.next();
+        if(correctAnswer.equals(input)){
+            System.out.println("Correct that is Correct");
+        }
+        else {
+            System.out.println("That is incorrect");
+        }
         // Write a print statement asking the question
         // Write a print statement giving the answer choices
 
